@@ -11,6 +11,6 @@
 
 int main(void)
 {
-
+  printf("Welcome to the Shell");
 return (0)
 }
