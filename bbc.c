@@ -11,6 +11,6 @@
 
 int main(void)
 {
-  printf("Welcome to the Shell");
+  printf("Welcome to the Shell project!");
 return (0)
 }
