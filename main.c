@@ -17,7 +17,7 @@ int main(int argc, int **argv)
 
 	do
 	{
-		printprompt1();
+		print_prompt1();
 		cmd = read_cmd();
 
 		if (!cmd)
