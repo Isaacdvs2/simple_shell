@@ -31,9 +31,9 @@ char *read_cmd(void)
 
 		else
 		{
-			char ptr2;
+			char *ptr2;
 
-			ptr2 = realloc(ptr, prtlen + bufflen + 1);
+			ptr2 = realloc(ptr, ptrlen + bufflen + 1);
 
 			if (ptr2)
 			{
@@ -49,7 +49,7 @@ char *read_cmd(void)
 
 		if (!ptr)
 		{
-			fprintf(stderr, "Error: Failed to allocate buffer: %s\n", stderr(errno));
+			fprintf(stderr, "Error: Failed to allocate buffer: %s\n", strerror(errno));
 					return (NULL);
 		}
 
